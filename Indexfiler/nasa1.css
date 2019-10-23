@@ -1,0 +1,401 @@
+body {
+    background-image: url(B/sunrise-1756274_1920.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+topnav {
+
+    overflow: hidden;
+    
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    text-align: center;
+    float: left;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Raleway';
+}
+
+
+.topnav a:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+/****************************************************/
+
+/******hoved elementer*******/
+
+/**************************************************/
+
+.active {
+
+    color: white;
+
+}
+
+/****************************************************/
+
+/******icons*******/
+
+/**************************************************/
+
+.topnav .icon {
+    display: none;
+}
+
+/****************************************************/
+
+/******Responsiv navbar*******/
+
+/**************************************************/
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/****************************************************/
+
+/******table resposiv*******/
+
+/**************************************************/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+	Label the data
+	*/
+    td:nth-of-type(1):before {
+        content: "First Name";
+    }
+    td:nth-of-type(2):before {
+        content: "Last Name";
+    }
+    td:nth-of-type(3):before {
+        content: "Born";
+    }
+    td:nth-of-type(4):before {
+        content: "Nationality";
+    }
+
+}
+
+/****************************************************/
+
+/******nasa logo*******/
+
+/**************************************************/
+
+.nslo {
+    margin: auto;
+    max-height: 1400px;
+    max-width: 800px;
+
+}
+
+/****************************************************/
+
+/******texst elementer*******/
+
+/**************************************************/
+
+.card-title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+/****************************************************/
+
+/******mone man*******/
+
+/**************************************************/
+
+.speech-bubble {
+    position: relative;
+    background: #ffffff;
+    border-radius: .4em;
+    width: 100%;
+    padding: 20px;
+    right: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border: 2.75em solid transparent;
+    border-top-color: #ffffff;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -0.575em;
+    margin-bottom: -2.75em;
+}
+
+.mone {
+
+    position: fixed;
+    right: 0;
+    top: 300px;
+    bottom: 650px;
+    margin: 0;
+    padding: 0;
+    width: 29%;
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+    max-height: 400px;
+    max-width: 200px;
+    min-width: 300px;
+
+
+}
+
+@media screen and (min-width:300px) {  
+  .mone {
+    display: none;
+  }
+}
+@media screen and (min-width:500px) {  
+  .mone {
+    display: block;
+  }
+}
+
+.mone:hover {
+    animation: shake 6.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-5px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-8px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(85px, 52px) rotate(360deg);
+    }
+    40% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 52px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+}
+
+/****************************************************/
+
+/******Senter elemneter*******/
+
+/**************************************************/
+
+.nt {
+    color: black;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0px;
+}
+
+.ts {
+    font-size: 10px;
+    font-family: inherits;
+}
+
+/****************************************************/
+
+/******cards *******/
+
+/**************************************************/
+
+.card {
+    margin: 35px;
+    padding: 20px;
+}
+
+/****************************************************/
+
+/******første rom racket*******/
+
+/**************************************************/
+
+.cd1 {
+    color: #fff;
+    height: 40rem;
+    font-family: 'Raleway';
+    background: url(B/rr.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/****************************************************/
+
+/******Iss*******/
+
+/**************************************************/
+
+.cd2 {
+    color: #fff;
+    height: 30rem;
+    font-family: 'Raleway';
+    background: url(B/iss054e022843_0.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/****************************************************/
+
+/******robot*******/
+
+/**************************************************/
+
+.cd3 {
+    color: #fff;
+    height: 30rem;
+    font-family: 'Raleway';
+    background: url(B/robot.png) center no-repeat;
+    background-size: cover;
+}
+
+/***************************************************/
+
+/*lister*/
+
+/*****************************************************/
+
+ul {
+    font-family: 'Raleway';
+}
+
+td {
+    font-family: 'Raleway';
+}
+
+/*************************/
+
+/****************************************************/
+
+/******Footer*******/
+
+/**************************************************/
+.footer{
+    padding-bottom: 100px;
+    position: relative;
+    width: 100%;
+    font-family: 'Raleway';
+ 
+}
+
+
+
+.footer h3 {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+
+
+
+/*-----*/
